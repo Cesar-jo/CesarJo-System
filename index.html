@@ -10,6 +10,7 @@
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="trabajos.css">
 </head>
 
 <body>
@@ -23,9 +24,11 @@
             <a href="#inicio">Inicio</a>
             <a href="#yo">Acerca de mí</a>
             <a href="#servicio">Servicios</a>
-            <a href="#portafolio">Portafolio</a>
+            <a href="#portafolio">Galeria</a>
             <a href="#expertos">Expertos</a>
+            <a href="#trabajo">Trabajos</a>
             <a href="#contacto">Contacto</a>
+
         </nav>
         <!--Creamos una divicion que tendra los textos de nuestra cabezera en un contenedor (header)-->
         <div class="contenedor head">
@@ -133,6 +136,87 @@
                 </div>
             </section>
         </section>
+
+        <!--Apartado Trabajos (Portafolio)-->
+        <!--Aqui haremos otra seccion donde iran los filtros de
+    nuestro trabajo-->
+        <section class="work contenedor" id="trabajo">
+            <h3 class="subtitulos">Nuestro trabajo</h3>
+            <p class="after centrar">Hacemos de algo simple algo extraordinario</p>
+            <!--Creamos unos botones y una lista desordenada 
+con <li></li> en nuestros filtros-->
+            <div class="botones-work">
+                <ul>
+                    <li class="filter active" data-nombre='todos'>Mis proyectos</li>
+                    <!--<li class="filter" data-nombre='desarrolloweb'>Desarrollo web</li>-->
+                    <!--<li class="filter" data-nombre='programacion'>Programacion</li>-->
+
+                </ul>
+            </div>
+
+            <!--Aqui va a ir una div donde se encontrara la la galeria-->
+
+            <!--Galeria programacion-->
+            <div class="galeria-work">
+                <div class="cont-work programacion">
+                    <div class="img-work">
+                        <img src="img/sistema-escolar.jpg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <a class="galeria-links" href="https://www.youtube.com/watch?v=vz3NAiui77I">Sistema escolar</a>
+                    </div>
+                </div>
+
+                <div class="cont-work programacion">
+                    <div class="img-work">
+                        <img src="img/ecommerce.jpg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <a class="galeria-links" href="https://www.youtube.com/watch?v=kMUp8SUjRNQ">Sistema de ventas</a>
+                    </div>
+                </div>
+
+                <div class="cont-work programacion">
+                    <div class="img-work">
+                        <img src="img/sistema-crud&login.jpg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <a class="galeria-links" href=" https://www.youtube.com/channel/UCYs_6tEdQ-oliQQ0nJuXaTQ">Crud & login</a>
+                    </div>
+                </div>
+
+                <!---Galeria desarrollo web-->
+
+                <div class="cont-work desarrolloweb">
+                    <div class="img-work">
+                        <img src="img/generador-fraces (3).png" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <a class="galeria-links" href="https://cesar-jo.github.io/Tufrasecool/">Generador de frases</a>
+                    </div>
+                </div>
+
+                <div class="cont-work desarrolloweb">
+                    <div class="img-work">
+                        <img src="img/sitioweb.jpg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <a class="galeria-links" href="https://cesar-jo.github.io/Informatica-Con-Cesar/">Portafolio de trabajos</a>
+                    </div>
+                </div>
+
+
+                <div class="cont-work desarrolloweb">
+                    <div class="img-work">
+                        <img src="img/ecommerce.jpg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <a class="galeria-links" href="#">Punto de ventas</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- Load Facebook SDK for JavaScript -->
@@ -195,6 +279,8 @@
 
     <script src="js/menu.js"></script>
     <script src="js/lightbox.js"></script>
+    <script src="js/filtro.js"></script>
+
 </body>
 
 </html>
