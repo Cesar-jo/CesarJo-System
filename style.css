@@ -259,6 +259,16 @@
                     width: 100%;
                     font-weight: 400;
                 }
+                /*Apartado imagenes animadas*/
+                
+                .imganimada {
+                    transition: transform 0.5s;
+                }
+                
+                .imganimada:hover {
+                    transform: scale(1.2);
+                    cursor: pointer;
+                }
                 /*      Apartado Footer      */
                 
                 footer {
